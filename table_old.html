@@ -10,7 +10,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    .carousel-inner > .carousel-item > img {
+      margin: auto;
+    }
+  </style>
   </head>
+
 
   <body>
     <div class="container">
@@ -41,23 +48,28 @@
       </nav>
     </div>
       
-    <div class="container">
+    <div class="container ">
       <div class="carousel slide" data-ride="carousel" id="ca1">
-        <a href="#ca1" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
-        <a href="#ca1" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+        <a href="#ca1" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon bg-secondary"></span></a>
+        <a href="#ca1" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon bg-secondary"></span></a>
         <ul class="carousel-indicators">
-          <li class="bg-dark" data-slide-to="0"></li>
-          <li class="bg-dark" data-slide-to="1"></li>
+          <li data-target="#ca1" class="bg-dark" data-slide-to="0"></li>
+          <li data-target="#ca1" class="bg-dark" data-slide-to="1"></li>
+          <li data-target="#ca1" class="bg-dark" data-slide-to="2"></li>
+          <li data-target="#ca1" class="bg-dark" data-slide-to="3"></li>
         </ul>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="imeges/тріади деберейнера.png">
+            <img class="d-block img-fluid" src="imeges/c_debereinera.png">
           </div>
           <div class="carousel-item">
-            <img src="imeges/октави ньюлендса.jpg">
+            <img class="d-block img-fluid" src="imeges/c_niulends.png">
           </div>
           <div class="carousel-item">
-            <img src="imeges/таблиця мейєра.jpg">
+            <img class="d-block img-fluid" src="imeges/c_meiyera.png">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block img-fluid" src="imeges/c_mendeleev.png">
           </div>
         </div>
       </div>
