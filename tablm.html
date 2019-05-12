@@ -28,6 +28,10 @@
 			}
 			table.chemMod td { text-align: center; }
 			table.chemMod th { text-align: center; }
+			body {
+  			font-family: Arial;
+			}
+			.cursor-pointer { cursor: pointer; }
 		</style>
 	</head>
 	<body>
@@ -60,30 +64,42 @@
     </div>
 
     <div class="container">
-    	<br>
-			<div class="row">
-				<div class="col-auto">	
-					<table class="chemMod grP">
-						<tr>
-							<td>He <span class="badge badge-secondary">1</span></td>
-							<td>2 <span class="badge badge-secondary">2</span></td>
-						</tr>
-						<tr>
-							<th colspan="2">Гелій <span class="badge badge-secondary">3</span></th>
-						</tr>
-						<tr>
-							<td>1s<sup>2</sup> <span class="badge badge-secondary">4</span></td>
-							<td>4,0026 <span class="badge badge-secondary">5</span></td>
-						</tr>
-					</table>
-				</div>
-				<div class="col">
-					&nbsp;&nbsp;<span class="badge badge-secondary">1</span> - символ
-					&nbsp;&nbsp;<span class="badge badge-secondary">2</span> - порядковий номер
-					&nbsp;&nbsp;<span class="badge badge-secondary">3</span> - назва елемента<br>
-					&nbsp;&nbsp;<span class="badge badge-secondary">4</span> - електронна конфігурація
-					&nbsp;&nbsp;<span class="badge badge-secondary">5</span> - атомна маса в а.о.м.(г/моль)<br>
-				  <u>Для детальної інформації про елемент потрібно натиснути на клітинку у таблиці.</u>
+			  <u data-target="#modWinInfo" data-toggle="modal"  class="cursor-pointer">Для детальної інформації про елемент потрібно натиснути на клітинку у таблиці.</u>
+		</div>
+
+		<div class="modal" id="modWinInfo" >
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h2>Опис клітинки таблиці</h2>
+						<button class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-auto">	
+								<table class="chemMod grP">
+									<tr>
+										<td>He <span class="badge badge-secondary">1</span></td>
+										<td>2 <span class="badge badge-secondary">2</span></td>
+									</tr>
+									<tr>
+										<th colspan="2">Гелій <span class="badge badge-secondary">3</span></th>
+									</tr>
+									<tr>
+										<td>1s<sup>2</sup> <span class="badge badge-secondary">4</span></td>
+										<td>4,0026 <span class="badge badge-secondary">5</span></td>
+									</tr>
+								</table>
+							</div>
+							<div class="col">
+								&nbsp;&nbsp;<span class="badge badge-secondary">1</span> - символ
+								&nbsp;&nbsp;<span class="badge badge-secondary">2</span> - порядковий номер
+								&nbsp;&nbsp;<span class="badge badge-secondary">3</span> - назва елемента<br>
+								&nbsp;&nbsp;<span class="badge badge-secondary">4</span> - електронна конфігурація
+								&nbsp;&nbsp;<span class="badge badge-secondary">5</span> - атомна маса в а.о.м.(г/моль)<br>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -771,6 +787,150 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="modal" id="modWinCl">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h2>Cl</h2>
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<table class="chemMod grY">
+								<tr>
+									<td>Cl</td>
+									<td>17</td>
+								</tr>
+								<tr>
+									<th colspan="2">Хлор</th>
+								</tr>
+								<tr>
+									<td>[Ne] 3s<sup>2</sup> 3p<sup>5</sup> </td>
+									<td>35,452</td>
+								</tr>
+							</table>
+							<p>Від грецького хлорос (грец. χλωρός) — «зелений». Хлор — важкий газ жовтувато-зеленого кольору з різким, задушливим запахом, неметал. При вдиханні дуже подразнює слизову оболонку і викликає гострий кашель, а у великих кількостях — навіть смерть. Хлор досить поширений елемент.</p>
+							<p>Вперше хлор був отриманий у 1774 шведським хіміком К. Шеєле (Scheele), який отримав його при взаємодії піролюзиту з соляною кислотою:<br>S4HCl + MnO<sub>2</sub> = Cl<sub>2</sub> + MnCl<sub>2</sub> + 2H<sub>2</sub>O. Шеєле відзначив запах хлору, схожий із запахом царської води (суміш концентрованих кислот — нітратної HNO3 і хлоридної HCl)	, його здатність взаємодіяти з золотом і кіновар'ю, а також його відбілюючі властивості та токсичність для комах.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal" id="modWinAg">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h2>Ag</h2>
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<table class="chemMod grY">
+								<tr>
+									<td>Ag</td>
+									<td>18</td>
+								</tr>
+								<tr>
+									<th colspan="2">Аргон</th>
+								</tr>
+								<tr>
+									<td>[Ne] 3s<sup>2</sup> 3p<sup>6</sup> </td>
+									<td>39,948</td>
+								</tr>
+							</table>
+							<p>Арго́н (Ar) — хімічний елемент, проста речовина якого інертний газ, без кольору і запаху. У 1894 році вони виділили і описали газ, що залишився після того як з ємності з повітрям було вилучено весь кисень, вуглекислий газ і пари води. За пропозицією доктора Медана (голови засідання, на якому було зроблено доповідь про відкриття), Рейлі і Рамзай дали новому газу ім'я «аргон» (від грец. Αργός — лінивий, повільний, неактивний). Ця назва підкреслює найважливішу властивість елемента — його хімічну неактивність. У промисловості аргон отримують як побічний продукт при великомасштабному розділенні повітря на кисень і азот.</p>
+							<p>Використовується в газорозрядних трубках і аргонових лазерах.<br>З ламп розжарювання та інших електронних приладів для запобігання їх корозії від взаємодії з атмосферним киснем відкачують повітря, а для підтримки внутрішнього тиску його заміщають аргоном.<br>Аргоном заповнюють подвійні вікна для кращої термоізоляції.<br>У птахівництві аргон використовують для безболісного приспання курей.<br>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal" id="modWinK">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h2>K</h2>
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<table class="chemMod grP">
+								<tr>
+									<td>K</td>
+									<td>19</td>
+								</tr>
+								<tr>
+									<th colspan="2">Калій</th>
+								</tr>
+								<tr>
+									<td>[Ne] 4s<sup>1</sup> </td>
+									<td>39,098</td>
+								</tr>
+							</table>
+							<p>Калій — досить поширений хімічний елемент, на нього припадає 2,6 % маси земної кори. М'який сріблясто-білий метал. Хімічно дуже активний, сильний відновник. У зв'язку з високою хімічною активністю у вільному стані в природі він не зустрічаються, а тільки у вигляді різних сполук. Відкритий англійським хіміком Гемфрі Деві 1807 року. Металічний калій легко ріжеться ножем.</p>
+							<p>У воді калій вибухає фіолетовим полум'ям, також він дуже швидко вступає в реакцію з повітрям, тому зазвичай його зберігають повністю зануреним в гас або мінеральне масло.</p>
+							<p>Калій дуже важливий елемент в організмі людини, він відповідає за водно-сольовий баланс в клітинах, бере участь в роботі внутрішніх органів та м'язів. Калій допомагає в правильно функціонувати клітинам нашого організму. Збалансоване кількість цього елемента дуже важлива для нашого здоров'я. Хорошим джерелом калію, для нашого організму є морепродукти, банани, шоколад, авокадо, картопля, горіхи, помідори та петрушка.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal" id="modWinCa">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h2>Ca</h2>
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<table class="chemMod grP">
+								<tr>
+									<td>Ca</td>
+									<td>20</td>
+								</tr>
+								<tr>
+									<th colspan="2">Кальцій</th>
+								</tr>
+								<tr>
+									<td>[Ne] 4s<sup>2</sup> </td>
+									<td>40,078</td>
+								</tr>
+							</table>
+							<p>У вільному стані кальцій — сріблясто-білий легкий метал. За поширеністю в природі Кальцій посідає п'яте місце серед хімічних елементів (3,6 % маси земної кори). У зв'язку з високою хімічною активністю у вільному стані він не зустрічається. Твердість кальцію невелика, він лише трохи твердіший за свинець та натрій. Пластичність досить висока: кальцій легко можна пресувати і розкатувати в тоненькі листочки.</p>
+							<p>Назва елементу «кальцій» походить від лат. calx, calcis — вапно («м'який камінь»). Вона була запропонована англійським хіміком Гемфрі Деві, в 1808 р. що виділив металевий кальцій електролізом. Деві змішував вологе гашене вапно з оксидом ртуті HgO на платиновій пластині, яка була анодом. Катодом служив платиновий дріт, занурений в рідку ртуть. В результаті електролізу виходила амальгама кальцію. Звідси ж походить і стара українська назва елементу, «вапень».</p>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal" id="modWinSe">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h2>Se</h2>
+							<button class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<div class="modal-body">
+							<table class="chemMod grBl">
+								<tr>
+									<td>Se</td>
+									<td>21</td>
+								</tr>
+								<tr>
+									<th colspan="2">Селен</th>
+								</tr>
+								<tr>
+									<td>[Ne] 4s<sup>2</sup> 4p<sup>4</sup> </td>
+									<td>78,96</td>
+								</tr>
+							</table>
+							<p>Селен - хімічний елемент, проста речовина якого утворює однойменну просту речовину, неметал, халькоген. Відкритий у 1817 році Йонсом Якобом Берцеліусом у відходах при виготовлені сірчаної кислоти.</p>
+							<p>Назва походить від грец. σελήνη («Місяць»): у зв'язку з тим що він постійно є супутнім хімічно подібного йому телуру (найменування якого походить від латинської назви Землі). Не пов'язаний з мінералом селенітом, який є сполукою кальцію.</p>			</div>
+						</div>
+					</div>
+				</div>
+
+
+
 
 
 
